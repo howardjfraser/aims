@@ -1,3 +1,1 @@
-# AIMS 3.0 Mock-ups
-
-
+# AIMS 3 Mock-ups
