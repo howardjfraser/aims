@@ -6,6 +6,3 @@ url: "http://yourdomain.com"
 
 # Build settings
 markdown: kramdown
-
-sass:
-  sass_dir: _sass_aims
