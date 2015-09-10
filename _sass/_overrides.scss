@@ -1,0 +1,11 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$hr-border-color: $gray-lighter;
+
+// example
+@include media-breakpoint-down(md) {
+  body {
+//    background-color: red !important;
+  }
+}

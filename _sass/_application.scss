@@ -1,78 +1,24 @@
-.container-wrapper {
-  background-color: #fff; padding-bottom:48px; padding-top:12px; min-height: 600px;
+@import "bootstrap/variables";
+
+body {
+  background-color: #eee;
 }
 
 .container {
-  min-width: 970px;
+  // TODO use md here?
+  min-width: 45em !important;
+}
+
+.main-wrapper {
+  background-color: #fff;
 }
 
 .header-wrapper {
   background-color: #fff;
-
-  hr {
-    margin-top: 10px;
-  }
-}
-
-header {
-  h1.title {
-    font-size: 42px;
-  }
-
-  h1.supplier {
-    margin-top: 26px;
-  }
-}
-
-.nav-wrapper {
-  margin-left: -24px; margin-right: 24px;
-}
-
-.main-wrapper {
-  .row {
-    margin-bottom: 26px;
-  }
-  h3 {
-    margin-top: 0px;
-  }
-  select {
-    margin-top: -2px;
-  }
-  .date {
-    margin-top: 0px;
-  }
-
-  table {
-    border-top: 0;
-  }
 }
 
 .blur {
   -webkit-filter: blur(1.5px);
-}
-
-.buttons {
-  input, button {
-    margin-top: 18px;  margin-left: -15px;
-  }
-  input {
-    padding: 21px;
-  }
-  button {
-    padding: 12px;
-  }
-}
-
-.widget {
-  margin-bottom: 24px;
-}
-
-footer {
-  padding-top: 36px; padding-bottom: 27px; background-color: #eee;
-}
-
-li a {
-  font-weight: 500;
 }
 
 table th,
@@ -80,26 +26,6 @@ table td {
   vertical-align: middle !important;
 }
 
-table th {
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.highlight {
-  background-color: #ffc;
-}
-
 .strong {
   font-weight: 500;
-}
-
-.suppliers {
-  div {
-    padding-top: 64px;
-    padding-bottom: 16px;
-  }
 }
