@@ -1,3 +1,5 @@
+@import "bootstrap/variables";
+
 // Underline nav
 //
 // Extends `.nav` like other Bootstrap navs.
@@ -9,20 +11,20 @@
     // Links rendered as pills
     > a {
       display: inline-block;
-      padding: 10 0;
-      font-weight: 400;
-      color: #333;
-      border-bottom: 4px solid transparent;
+      padding: ($spacer / 2) 0;
+      font-weight: normal;
+      color: $brand-primary;
+      border-bottom-color: $brand-primary;
 
       &:hover,
       &:focus {
-        color: #337ab7;
+        color: $brand-primary;
         background-color: transparent;
       }
     }
 
     + li {
-      margin-left: 30;
+      margin-left: 24px;
     }
 
     // Active state
@@ -30,9 +32,9 @@
       &,
       &:hover,
       &:focus {
-        font-weight: 600;
-        color: #337ab7;
-        border-bottom-color: #337ab7;
+        font-weight: 500;
+        color: $gray-dark;
+        border-bottom-color: $gray-dark;
       }
     }
   }
@@ -59,14 +61,14 @@
         &,
         &:hover,
         &:focus {
-          border-left-color: #337ab7
+          border-left-color: $gray-dark;
         }
       }
     }
 
     > li > a {
       display: block;
-      padding: 10px 10px 10px 20px;
+      padding: 5px 10px 5px ($spacer-x * 1.5);
       border-bottom: 0;
       border-left: 4px solid transparent;
 
@@ -77,16 +79,12 @@
     }
 
     .nav-header {
-      padding-left: (30px + 4px);
+      padding-left: (($spacer-x * 1.75));
     }
 
     .nav-divider {
-      height: 1px;
-      margin: ((24 / 2) - 1) 0;
-      overflow: hidden;
-      background-color: rgba(255,255,255,.2);
-
-      margin-left: (20px + 4px);
+//      .nav-divider(rgba(255,255,255,.2));
+      margin-left: (($spacer-x * 1.5));
       margin-top: 20px;
       margin-bottom: 25px;
     }

@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  // TODO use md here?
+  // TODO md doesn't work here?
   min-width: 45em !important;
 }
 
@@ -28,4 +28,8 @@ table td {
 
 .strong {
   font-weight: 500;
+}
+
+.nav-stacked {
+  margin-left: -28px;
 }
