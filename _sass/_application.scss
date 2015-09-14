@@ -1,9 +1,5 @@
 @import "bootstrap/variables";
 
-.container {
-  min-width: 45em !important; // TODO md doesn't work here?
-}
-
 .footer-wrapper {
   background-image: linear-gradient(to right, $f4f, $brand-primary);
 }
