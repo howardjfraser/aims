@@ -29,4 +29,10 @@ footer {
   a, a:hover {
     color: #eee;
   }
+
+  div.text-left {
+    a {
+      padding-right: 48px;
+    }
+  }
 }
