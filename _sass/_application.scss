@@ -1,11 +1,11 @@
 @import "bootstrap/variables";
 
-.footer-wrapper {
-  background-image: linear-gradient(to right, $f4f, $brand-primary);
-}
-
 .blur {
   -webkit-filter: blur(3px);
+}
+
+.strong {
+  font-weight: 500;
 }
 
 table th,
@@ -13,11 +13,9 @@ table td {
   vertical-align: middle !important;
 }
 
-.strong {
-  font-weight: 500;
-}
-
 footer {
+  background-image: linear-gradient(to right, $f4f, $brand-primary);
+
   a, a:hover {
     color: #eee;
   }
