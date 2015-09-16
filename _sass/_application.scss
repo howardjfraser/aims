@@ -26,3 +26,19 @@ footer {
     }
   }
 }
+
+nav {
+  .c-select {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  nav {
+    .c-select {
+      margin-bottom: 1rem;
+    }
+  }
+}
