@@ -3,24 +3,43 @@
   <button class="btn btn-primary pull-right">New Agent</button>
   <h2 class="m-b-md" style="margin-left: 12px;">Agents</h2>
 
-
   <div id="agents">
-  <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="name">Sort by name</button>
+
+  <div class="row m-b-md">
+    <div class="col-xs-4">
+      <input class="search form-control" placeholder="Filter&hellip;" />
+    </div>
+  </div>
+
 
   <table class="table table-hover m-b-0">
+    <thead>
+      <tr>
+        <th class="sort" data-sort="name">Name</th>
+        <th class="sort" data-sort="bill">Bill To</th>
+        <th class="sort" data-sort="pay">Payer</th>
+      </tr>
+    </thead>
     <tbody class="list">
     <tr>
       <td class="name">Farm Source</td>
+      <td class="bill">BILL-000-000-004</td>
+      <td class="pay">PAY-000-000-000</td>
     </tr>
     <tr>
       <td class="name">Farmlands</td>
+      <td class="bill">BILL-000-000-002</td>
+      <td class="pay">PAY-111-000-000</td>
     </tr>
     <tr>
       <td class="name">PGG Wrightson</td>
+      <td class="bill">BILL-000-000-003</td>
+      <td class="pay">PAY-444-000-000</td>
     </tr>
     <tr>
       <td class="name">Kays Agency</td>
+      <td class="bill">BILL-000-000-001</td>
+      <td class="pay">PAY-777-000-003</td>
     </tr>
     </tbody>
   </table>
@@ -29,4 +48,12 @@
 
 </div>
 
-{% include supplier.html %}
+<script src="http://listjs.com/no-cdn/list.js"></script>
+
+<script>
+var options = {
+  valueNames: [ 'name', 'bill', 'pay' ]
+};
+
+var userList = new List('agents', options);
+</script>
