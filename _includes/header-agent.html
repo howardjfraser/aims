@@ -1,27 +1,39 @@
 <header>
 
-  <div class="container">
+<div class="collapse" id="exCollapsingNavbar">
+  <div class="bg-inverse p-a">
+    <div class="container">
+      <h4>TODO supplier picker</h4>
+      <span class="text-muted">Supplier picker goes here.</span>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-light">
 
-    <div class="row m-t-md">
+  <div class="container">
+    <div class="row m-t">
 
       <div class="col-xs-12 col-sm-6">
+
         <h1 class="title">
           <span class="text-muted">AIMS</span>&#8239;<span class="text-muted"><small>by</small></span>&#8239;
           {% include logo.html %}
         </h1>
+
       </div>
 
-      <!-- This only applies to agents with multiple suppliers -->
       <div class="col-xs-12 col-sm-6 text-right">
-        <h1 class="supplier">
-          <a href="" data-toggle="modal" data-target="#supplier-switcher">Syngenta</a>
+        <h1 class="supplier text-primary">
+          <span data-toggle="collapse" data-target="#exCollapsingNavbar">Syngenta</span>
         </h1>
       </div>
 
     </div>
-
-    <hr class="m-b-md">
-
+    <hr>
   </div>
+
+
+</nav>
+
 
 </header>
