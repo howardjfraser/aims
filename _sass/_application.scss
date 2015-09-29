@@ -14,7 +14,6 @@ table td {
 }
 
 footer {
-  background-image: linear-gradient(to right, $f4f, $brand-primary);
 
   a, a:hover {
     color: #eee;
@@ -22,40 +21,30 @@ footer {
 
   div.text-left {
     a {
-      padding-right: 48px;
+      margin-right: 3rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    a {
+      display: block;
+      margin-bottom: 0.75rem;
     }
   }
 }
 
-nav {
-  .c-select {
-//    font-size: 1rem;
-//    font-weight: 500;
+nav.top-nav {
+  .nav-link {
+    padding-right: 1rem;
+    line-height: 2em;
   }
 }
 
-label {
-      font-weight: 500;
-      position: relative;
-      top: 2px;
+header,
+section#main {
+  background-color: white;
 }
 
-@include media-breakpoint-down(sm) {
-  nav {
-    .c-select {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-nav {
-  hr {
-    margin-left: 28px;
-  }
-}
-
-.list-group-item {
-  padding: 6px 9px;
-  font-size: 90%;
-//  font-weight: 500;
+body {
+  background-image: linear-gradient(to right, $f4f, $brand-primary);
 }

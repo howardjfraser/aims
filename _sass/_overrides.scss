@@ -7,9 +7,20 @@ $hr-border-color: $gray-lighter;
 
 $body-color: $gray;
 
+small,
+.small {
+  font-size: 90% !important;
+}
+
+.list-group-item {
+  padding: .375rem 0.75rem !important;
+}
+
+
+
 // example
 @include media-breakpoint-down(md) {
   body {
-//    background-color: red !important;
   }
 }
+
