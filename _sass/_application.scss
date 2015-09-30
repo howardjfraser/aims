@@ -18,19 +18,6 @@ footer {
   a, a:hover {
     color: #eee;
   }
-
-  div.text-left {
-    a {
-      margin-right: 3rem;
-    }
-  }
-
-  @include media-breakpoint-down(xs) {
-    a {
-      display: block;
-      margin-bottom: 0.75rem;
-    }
-  }
 }
 
 nav.top-nav {
