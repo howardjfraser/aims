@@ -48,3 +48,9 @@ section#main {
 body {
   background-image: linear-gradient(to right, $f4f, $brand-primary);
 }
+
+#supplierPicker {
+  a, a:hover {
+    color: #eee;
+  }
+}
